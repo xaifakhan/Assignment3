@@ -1,0 +1,5 @@
+void main() {
+  List<dynamic> names = ["waqas","waqar","huzaifa","hassam"];
+  print("$names");
+}
+

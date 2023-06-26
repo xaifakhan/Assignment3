@@ -1,0 +1,14 @@
+List<int> getPositiveNumbers(List<int> originalList) {
+  List<int> positiveNumbers =
+      originalList.where((number) => number > 0).toList();
+  return positiveNumbers;
+}
+
+void main() {
+  List<int> originalList = [4, -2, 7, -1, 5, -3];
+
+  List<int> positiveNumbers = getPositiveNumbers(originalList);
+
+  print(positiveNumbers); // Output: [4, 7, 5]
+  print(originalList); // Output: [4, -2, 7, -1, 5, -3]
+}

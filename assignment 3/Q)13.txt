@@ -1,0 +1,14 @@
+List<int> sortList(List<int> originalList) {
+  List<int> sortedList = List.from(originalList);
+  sortedList.sort();
+  return sortedList;
+}
+
+void main() {
+  List<int> originalList = [4, 2, 7, 1, 5];
+
+  List<int> sortedList = sortList(originalList);
+
+  print(sortedList); // Output: [1, 2, 4, 5, 7]
+  print(originalList); // Output: [4, 2, 7, 1, 5]
+}

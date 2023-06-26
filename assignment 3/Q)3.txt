@@ -1,0 +1,16 @@
+void main() {
+  List<String> days = [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday"
+  ];
+  while (days.isNotEmpty) {
+    print("Remaining days : $days");
+    String removedDays = days.removeLast();
+    print("Removed Days : $removedDays");
+  }
+}

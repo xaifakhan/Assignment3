@@ -1,0 +1,13 @@
+void main() {
+  Map<String, String> contactInfo = {
+    'asim': 'xaifa',
+    'phone': '1234567890',
+    'address': '22 Main Street',
+    'email': 'xaifa@example.com'
+  };
+
+  List<String> keysWithLengthFour =
+      contactInfo.keys.where((key) => key.length == 4).toList();
+
+  print("Keys with length 4: $keysWithLengthFour");
+}

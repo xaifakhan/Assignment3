@@ -1,0 +1,14 @@
+List<String> reverseList(List<String> originalList) {
+  List<String> reversedList = List.from(originalList);
+  reversedList = reversedList.reversed.toList();
+  return reversedList;
+}
+
+void main() {
+  List<String> originalList = ['apple', 'banana', 'cherry', 'date'];
+
+  List<String> reversedList = reverseList(originalList);
+
+  print(reversedList); // Output: [date, cherry, banana, apple]
+  print(originalList); // Output: [apple, banana, cherry, date]
+}

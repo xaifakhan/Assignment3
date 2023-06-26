@@ -1,0 +1,14 @@
+List<int> squareValues(List<int> originalList) {
+  List<int> squaredList =
+      originalList.map((number) => number * number).toList();
+  return squaredList;
+}
+
+void main() {
+  List<int> originalList = [1, 2, 3, 4, 5];
+
+  List<int> squaredList = squareValues(originalList);
+
+  print(squaredList); // Output: [1, 4, 9, 16, 25]
+  print(originalList); // Output: [1, 2, 3, 4, 5]
+}

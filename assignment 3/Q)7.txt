@@ -1,0 +1,26 @@
+List<String> removeDuplicates(List<String> inputList) {
+  List<String> result = [];
+
+  for (String element in inputList) {
+    if (!result.contains(element)) {
+      result.add(element);
+    }
+  }
+
+  return result;
+}
+
+void main() {
+  List<String> inputList = [
+    'apple',
+    'banana',
+    'orange',
+    'banana',
+    'grape',
+    'apple'
+  ];
+
+  List<String> uniqueList = removeDuplicates(inputList);
+
+  print(uniqueList);
+}

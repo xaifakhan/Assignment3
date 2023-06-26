@@ -1,0 +1,15 @@
+List<T> takeNElements<T>(List<T> list, int n) {
+  if (n >= list.length) {
+    return List<T>.from(list);
+  } else {
+    return list.sublist(0, n);
+  }
+}
+
+void main() {
+  List<int> originalList = [1, 2, 3, 4, 5, 6, 7];
+  int n = 3;
+
+  List<int> result = takeNElements(originalList, n);
+  print(result); // Output: [1, 2, 3]
+}
